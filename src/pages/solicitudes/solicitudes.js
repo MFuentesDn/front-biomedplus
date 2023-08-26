@@ -1,5 +1,6 @@
 import CrearSolicitud from './crear-solicitud';
 import VerSolicitudes from './ver-solicitudes';
+import { useEffect, useState } from "react";
 
 
 function Solicitudes() {

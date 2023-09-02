@@ -1,13 +1,20 @@
 import './home.css';
 import ViewTicketsCreated from './tickets/view-tickets';
 import ViewMaintenancesNextExpected from './maintenances/next-expected';
+import { useAuth } from '../../auth/AuthProvider';
+import Menu from '../../components/menu/menu';
 
 
 
 function Home() {
 
+  const auth = useAuth();
+
+
   return (
     <div>
+      < Menu />
+
 
       <div class="container">
         <div class="accordion" id="accordionPanelsStayOpenExample">
